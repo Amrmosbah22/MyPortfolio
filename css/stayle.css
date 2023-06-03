@@ -19,6 +19,19 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
+.title{
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
 @media (min-width: 768px) {
     .container{
         width: 750px;
@@ -67,13 +80,14 @@ a{
     background-color: #ffff;
 }
 @media screen and (max-width:767px) {
-    .header .logo {
-        font-size: 20px;
+    .header {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
     .header .nav a{
-        display: flex;
-        justify-content: end;
-        padding: 5px;
+        padding: 5px ;
     }
 }
 /* header */
@@ -92,6 +106,8 @@ a{
     font-size: 1.2em;
 }
 .main .text span{
+    display: inline-block;
+    margin-top: 15px;
     color: gray;
     font-size: 2.3em;
     font-weight: 600;
@@ -143,14 +159,12 @@ a{
     }
 }  
 @media screen and (min-width:768px) and (max-width:1023px) {
-    .main{
-        position: relative;
-    }
-    .box{
-        position: absolute;
-        top: 20%;
-        left: 20%;
+    .main .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        line-height: 2;
     }
     .main .img img{
         display: none;
@@ -162,18 +176,6 @@ a{
     padding-bottom: var(--main-padding-bottom);
     color: #fff;
     background-color: #000 ;
-}
-.services .title{
-    text-align: center;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-.services .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 .services .content .cards{
     text-align: center;
@@ -210,3 +212,107 @@ a{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
 }
+.projects .content .card{
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    margin: 20px;
+}
+.projects .content .card img {
+    width: 100%;
+    transition: .5s;
+}
+.projects .content .card:hover img{
+    transform: scale(1.1);
+}
+.projects .content .info{
+    padding: 1em;
+}
+.projects .content .info p{
+    font-size: 0.9em;
+    color: gray;
+}
+.projects .content .info .project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.projects .content .info .project-title a{
+    color: gray;
+}
+.projects .content .info .project-title a:hover{
+    color: #fff;
+}
+/* contact */
+.contact{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    color: #fff;
+    background-color: #000 ;
+}
+.contact .content .cards{
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    width: 21.25em;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact .content .cards:hover{
+    color: #fff;
+    background-color: gray; 
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.699);
+}
+.contact .content .cards .icon{
+    font-size: 4em;
+}
+.contact .content .cards .info h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 3;
+}
+.contact .content .cards .info p{
+    color: gray;
+}
+.contact .content .cards:hover p{
+    color: #fff;
+}
+/* footer */
+.footer{
+    padding: 50px 0;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .link a{
+    color: #000;
+    font-size: 1.5em;
+    letter-spacing: .6em;
+    transition: .2s;
+}
+.footer .link .github:hover{
+    color: blueviolet;
+}
+.footer .link .linkedin:hover{
+    color: royalblue;
+}
+.footer .link .face:hover{
+    color: royalblue;
+}
+.footer p{
+    font-size: 1.3em;
+    font-weight: 600;
+}   
+.footer p span{
+    color: gray ;
+}
+/*  */
