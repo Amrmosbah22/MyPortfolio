@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+:root{
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -55,7 +59,7 @@ a{
     font-weight: 500;
     padding-left: 30px;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 15px 20px;
     transition: .2s;
 }
 .header .nav a:hover{
@@ -152,4 +156,57 @@ a{
         display: none;
     }
 }  
-/*  */
+/* services */
+.services{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    color: #fff;
+    background-color: #000 ;
+}
+.services .title{
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services .content .cards{
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    width: 21.25em;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.services .content .cards:hover{
+    color: #fff;
+    background-color: gray; 
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.699);
+}
+.services .content .cards .icon{
+    font-size: 6em;
+}
+.services .content .cards .info h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 3;
+}
+.services .content .cards .info p{
+    color: gray;
+}
+.services .content .cards:hover p{
+    color: #fff;
+}
+/* projects */
+.projects{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
